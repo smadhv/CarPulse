@@ -8,6 +8,7 @@
 
 import Foundation
 import SmartDeviceLink
+import UIKit
 
 class SDLProxyManager: NSObject {
     private let appName = "CarPulse"
@@ -20,6 +21,7 @@ class SDLProxyManager: NSObject {
     
     // Manager
     var sdlManager: SDLManager!
+    var carScreen: CarScreen!!
     
     // Singleton
     static let sharedManager = SDLProxyManager()
@@ -34,7 +36,7 @@ class SDLProxyManager: NSObject {
         // Used for TCP/IP Connection
         let lifecycleConfiguration = SDLLifecycleConfiguration(appName: appName, appId: appId, ipAddress: givenIP, port: givenPort)
         lifecycleConfiguration.shortAppName = "CarPulse"
-        lifecycleConfiguration.appType = SDLAppHMIType.default
+        lifecycleConfiguration.appType = SDLAppHMIType.navigation
         
         // App icon image
         //        if let appImage = UIImage(named: "<#AppIcon Name#>") {
@@ -45,8 +47,12 @@ class SDLProxyManager: NSObject {
         let lockScreenConfig = SDLLockScreenConfiguration.disabled()
         let logConfig = SDLLogConfiguration.debug()
         
-        let config = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfig, logging: logConfig)
-            
+        
+        carScreen = CarScreen()
+        
+        let streamingConfig = SDLStreamingMediaConfiguration.autostreamingInsecureConfiguration(withInitialViewController: carScreen)
+        let config = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfig, logging: logConfig, streamingMedia: streamingConfig)
+
         sdlManager = SDLManager(configuration: config, delegate: self)
     }
     

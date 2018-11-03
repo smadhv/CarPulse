@@ -22,6 +22,10 @@
 		B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406C218E1A4500F65FF2 /* LayoutManager.swift */; };
 		B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406D218E1A4500F65FF2 /* LocalDataManager.swift */; };
 		B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406F218E1A4600F65FF2 /* Utils.swift */; };
+		B7E7E4FD218E52F5006D7D9D /* CarScreen-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E4FC218E52F4006D7D9D /* CarScreen-main.swift */; };
+		B7E7E4FF218E533F006D7D9D /* CarScreen-initUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */; };
+		B7E7E501218E54AF006D7D9D /* StartScreen-logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E500218E54AF006D7D9D /* StartScreen-logic.swift */; };
+		B7E7E503218E551B006D7D9D /* StartScreen-system.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E502218E551B006D7D9D /* StartScreen-system.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		B78A406C218E1A4500F65FF2 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
 		B78A406D218E1A4500F65FF2 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		B78A406F218E1A4600F65FF2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B7E7E4FC218E52F4006D7D9D /* CarScreen-main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CarScreen-main.swift"; sourceTree = "<group>"; };
+		B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarScreen-initUI.swift"; sourceTree = "<group>"; };
+		B7E7E500218E54AF006D7D9D /* StartScreen-logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-logic.swift"; sourceTree = "<group>"; };
+		B7E7E502218E551B006D7D9D /* StartScreen-system.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-system.swift"; sourceTree = "<group>"; };
 		E2899DF509F5410E384C9BAC /* Pods-CarPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.release.xcconfig"; sourceTree = "<group>"; };
 		FBA631684DBECF5A8AF1DBA2 /* Pods-CarPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +86,7 @@
 		524D1132218E370F00397724 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7E7E4FB218E529C006D7D9D /* CarScreen */,
 				524D1133218E371C00397724 /* StartScreen */,
 			);
 			path = ViewControllers;
@@ -88,6 +97,8 @@
 			children = (
 				524D1130218E370600397724 /* StartScreen-main.swift */,
 				524D1134218E376200397724 /* StartScreen-initUI.swift */,
+				B7E7E500218E54AF006D7D9D /* StartScreen-logic.swift */,
+				B7E7E502218E551B006D7D9D /* StartScreen-system.swift */,
 			);
 			path = StartScreen;
 			sourceTree = "<group>";
@@ -145,6 +156,15 @@
 				B78A406F218E1A4600F65FF2 /* Utils.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7E7E4FB218E529C006D7D9D /* CarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B7E7E4FC218E52F4006D7D9D /* CarScreen-main.swift */,
+				B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */,
+			);
+			path = CarScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,16 +305,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78A4065218E12BC00F65FF2 /* ProxyManager.swift in Sources */,
+				B7E7E4FF218E533F006D7D9D /* CarScreen-initUI.swift in Sources */,
 				B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */,
 				524D1131218E370600397724 /* StartScreen-main.swift in Sources */,
 				B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */,
 				B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */,
 				524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */,
+				B7E7E503218E551B006D7D9D /* StartScreen-system.swift in Sources */,
 				B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */,
+				B7E7E4FD218E52F5006D7D9D /* CarScreen-main.swift in Sources */,
 				B78A4070218E1A4600F65FF2 /* AlertManager.swift in Sources */,
 				B78A4071218E1A4600F65FF2 /* ColorManager.swift in Sources */,
 				B7378CEF218E0C99007BCD69 /* AppDelegate.swift in Sources */,
 				B78A4068218E12D900F65FF2 /* Constants.swift in Sources */,
+				B7E7E501218E54AF006D7D9D /* StartScreen-logic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
