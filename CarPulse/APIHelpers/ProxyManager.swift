@@ -15,7 +15,7 @@ class SDLProxyManager: NSObject {
     
     // UPDATE ME ON SERVER USE
     static var local = true
-    private let givenIP = local ? "10.142.46.26" : "m.sdl.tools"
+    private let givenIP = local ? "10.142.72.63" : "m.sdl.tools"
     private let givenPort:UInt16 = local ? 12345 : 11947
     
     // Manager
