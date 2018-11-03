@@ -15,7 +15,7 @@ class SDLProxyManager: NSObject {
     
     // UPDATE ME ON USE
     private let givenIP = "m.sdl.tools"
-    private let givenPort:UInt16 = 12326
+    private let givenPort:UInt16 = 11947
     
     // Manager
     var sdlManager: SDLManager!
