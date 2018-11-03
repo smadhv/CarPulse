@@ -13,7 +13,7 @@ class SDLProxyManager: NSObject {
     private let appName = "CarPulse"
     private let appId = "1234567890"
     
-    // UPDATE ME ON USE
+    // UPDATE ME ON SERVER USE
     private let givenIP = "m.sdl.tools"
     private let givenPort:UInt16 = 11947
     

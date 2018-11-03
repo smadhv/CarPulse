@@ -27,8 +27,7 @@ extension UIFont {
 }
 
 extension UIColor {
-    static let RECRUITMATE_BLUE = rgb(23, 105, 197)
-    static let RECRUITMATE_BLUE_DARK = rgb(9, 72, 142)
+    static let FORD_BLUE = rgb(19, 81, 216)
     static let PLACEHOLDER_COLOR = rgb(184, 184, 193)
 }
 
