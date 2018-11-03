@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		093BBFEAB0900516706BCC95 /* Pods_CarPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5B709FA05A0F1D3818C1F /* Pods_CarPulse.framework */; };
+		524D1131218E370600397724 /* StartScreen-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D1130218E370600397724 /* StartScreen-main.swift */; };
+		524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D1134218E376200397724 /* StartScreen-initUI.swift */; };
 		B7378CEF218E0C99007BCD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7378CEE218E0C99007BCD69 /* AppDelegate.swift */; };
 		B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7378CF0218E0C99007BCD69 /* ViewController.swift */; };
 		B7378CF4218E0C99007BCD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7378CF2218E0C99007BCD69 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		3FB5B709FA05A0F1D3818C1F /* Pods_CarPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524D1130218E370600397724 /* StartScreen-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-main.swift"; sourceTree = "<group>"; };
+		524D1134218E376200397724 /* StartScreen-initUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-initUI.swift"; sourceTree = "<group>"; };
 		B7378CEB218E0C99007BCD69 /* CarPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7378CEE218E0C99007BCD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7378CF0218E0C99007BCD69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		524D1132218E370F00397724 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				524D1133218E371C00397724 /* StartScreen */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		524D1133218E371C00397724 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				524D1130218E370600397724 /* StartScreen-main.swift */,
+				524D1134218E376200397724 /* StartScreen-initUI.swift */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
 		B7378CE2218E0C98007BCD69 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +117,7 @@
 				B78A4069218E12F700F65FF2 /* Helpers */,
 				B78A4066218E12CE00F65FF2 /* APIHelpers */,
 				B7378CF0218E0C99007BCD69 /* ViewController.swift */,
+				524D1132218E370F00397724 /* ViewControllers */,
 				B7378CF2218E0C99007BCD69 /* Main.storyboard */,
 				B7378CF5218E0C99007BCD69 /* Assets.xcassets */,
 				B7378CF7218E0C99007BCD69 /* LaunchScreen.storyboard */,
@@ -264,8 +286,10 @@
 			files = (
 				B78A4065218E12BC00F65FF2 /* ProxyManager.swift in Sources */,
 				B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */,
+				524D1131218E370600397724 /* StartScreen-main.swift in Sources */,
 				B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */,
 				B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */,
+				524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */,
 				B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */,
 				B78A4070218E1A4600F65FF2 /* AlertManager.swift in Sources */,
 				B78A4071218E1A4600F65FF2 /* ColorManager.swift in Sources */,

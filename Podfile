@@ -8,6 +8,11 @@ target 'CarPulse' do
   # Pods for CarPulse
   pod 'SmartDeviceLink'
   
+  # Firebase pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  
   # Pods for API
   pod 'Alamofire', :inhibit_warnings => true
   pod 'SwiftyJSON', :inhibit_warnings => true
