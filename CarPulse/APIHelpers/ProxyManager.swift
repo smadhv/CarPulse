@@ -9,19 +9,20 @@
 import Foundation
 import SmartDeviceLink
 
-class ProxyManager: NSObject {
+class SDLProxyManager: NSObject {
     private let appName = "CarPulse"
     private let appId = "1234567890"
     
     // UPDATE ME ON USE
     private let givenIP = "m.sdl.tools"
-    private let givenPort:UInt16 = 18376
+    private let givenPort:UInt16 = 12326
     
     // Manager
-    fileprivate var sdlManager: SDLManager!
+    var sdlManager: SDLManager!
     
     // Singleton
-    static let sharedManager = ProxyManager()
+    static let sharedManager = SDLProxyManager()
+    
     
     private override init() {
         super.init()
@@ -61,10 +62,12 @@ class ProxyManager: NSObject {
             }
         }
     }
+    
+    
 }
 
 //MARK: SDLManagerDelegate
-extension ProxyManager: SDLManagerDelegate {
+extension SDLProxyManager: SDLManagerDelegate {
     func managerDidDisconnect() {
         print("Manager disconnected!")
     }
