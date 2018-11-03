@@ -1,0 +1,6 @@
+framework module Pods_CarPulse {
+  umbrella header "Pods-CarPulse-umbrella.h"
+
+  export *
+  module * { export * }
+}
