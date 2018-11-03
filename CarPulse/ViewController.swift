@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             if error != nil {
                 debugPrint("updatedScreen")
             } else {
-                debugPrint("failed to update")
+                debugPrint("\(error.debugDescription)")
             }
         }
     }

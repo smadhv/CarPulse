@@ -14,8 +14,9 @@ class SDLProxyManager: NSObject {
     private let appId = "1234567890"
     
     // UPDATE ME ON SERVER USE
-    private let givenIP = "m.sdl.tools"
-    private let givenPort:UInt16 = 11947
+    static var local = true
+    private let givenIP = local ? "10.142.46.26" : "m.sdl.tools"
+    private let givenPort:UInt16 = local ? 12345 : 11947
     
     // Manager
     var sdlManager: SDLManager!
@@ -31,11 +32,6 @@ class SDLProxyManager: NSObject {
 //        let lifecycleConfiguration = SDLLifecycleConfiguration(appName: appName, appId: appId)
         
         // Used for TCP/IP Connection
-        
-        
-    
-        
-        
         let lifecycleConfiguration = SDLLifecycleConfiguration(appName: appName, appId: appId, ipAddress: givenIP, port: givenPort)
         lifecycleConfiguration.shortAppName = "CarPulse"
         lifecycleConfiguration.appType = SDLAppHMIType.default
@@ -46,8 +42,8 @@ class SDLProxyManager: NSObject {
         //            lifecycleConfiguration.appIcon = appIcon
         //        }
         
-        let lockScreenConfig = SDLLockScreenConfiguration.enabled()
-        let logConfig = SDLLogConfiguration.default()
+        let lockScreenConfig = SDLLockScreenConfiguration.disabled()
+        let logConfig = SDLLogConfiguration.debug()
         
         let config = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfig, logging: logConfig)
             
