@@ -15,6 +15,11 @@
 		B7378CF9218E0C99007BCD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7378CF7218E0C99007BCD69 /* LaunchScreen.storyboard */; };
 		B78A4065218E12BC00F65FF2 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A4064218E12BC00F65FF2 /* ProxyManager.swift */; };
 		B78A4068218E12D900F65FF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A4067218E12D900F65FF2 /* Constants.swift */; };
+		B78A4070218E1A4600F65FF2 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406A218E1A4500F65FF2 /* AlertManager.swift */; };
+		B78A4071218E1A4600F65FF2 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406B218E1A4500F65FF2 /* ColorManager.swift */; };
+		B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406C218E1A4500F65FF2 /* LayoutManager.swift */; };
+		B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406D218E1A4500F65FF2 /* LocalDataManager.swift */; };
+		B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A406F218E1A4600F65FF2 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		B7378CFA218E0C99007BCD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B78A4064218E12BC00F65FF2 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
 		B78A4067218E12D900F65FF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B78A406A218E1A4500F65FF2 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		B78A406B218E1A4500F65FF2 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		B78A406C218E1A4500F65FF2 /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		B78A406D218E1A4500F65FF2 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		B78A406F218E1A4600F65FF2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E2899DF509F5410E384C9BAC /* Pods-CarPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.release.xcconfig"; sourceTree = "<group>"; };
 		FBA631684DBECF5A8AF1DBA2 /* Pods-CarPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				B78A4067218E12D900F65FF2 /* Constants.swift */,
+				B78A406A218E1A4500F65FF2 /* AlertManager.swift */,
+				B78A406B218E1A4500F65FF2 /* ColorManager.swift */,
+				B78A406C218E1A4500F65FF2 /* LayoutManager.swift */,
+				B78A406D218E1A4500F65FF2 /* LocalDataManager.swift */,
+				B78A406F218E1A4600F65FF2 /* Utils.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -248,7 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78A4065218E12BC00F65FF2 /* ProxyManager.swift in Sources */,
+				B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */,
+				B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */,
 				B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */,
+				B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */,
+				B78A4070218E1A4600F65FF2 /* AlertManager.swift in Sources */,
+				B78A4071218E1A4600F65FF2 /* ColorManager.swift in Sources */,
 				B7378CEF218E0C99007BCD69 /* AppDelegate.swift in Sources */,
 				B78A4068218E12D900F65FF2 /* Constants.swift in Sources */,
 			);
