@@ -16,7 +16,12 @@ class SDLProxyManager: NSObject {
     
     // UPDATE ME ON SERVER USE
     static var local = true
-    private let givenIP = local ? "192.168.0.28" : "m.sdl.tools"
+    
+    
+    static private let isSarika = false
+    static private let userIP = isSarika ? "192.168.0.28" : "192.168.0.24"
+    
+    private let givenIP = local ? userIP : "m.sdl.tools"
     private let givenPort:UInt16 = local ? 12345 : 11947
     
     // Manager
