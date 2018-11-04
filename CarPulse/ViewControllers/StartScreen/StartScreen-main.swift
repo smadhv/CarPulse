@@ -13,6 +13,8 @@ class StartScreen: UIViewController {
     var logoHolder:UIImageView!
     var usernameField:UITextField!
     var passwordField:UITextField!
+    var appHeader:UILabel!
+    var signIn:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

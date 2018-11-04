@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import ChameleonFramework
 
 extension StartScreen {
     func initUI() {
@@ -22,6 +23,14 @@ extension StartScreen {
         logoHolder.contentMode = .scaleAspectFit
         view.addSubview(logoHolder)
         
+        appHeader = UILabel(frame: LayoutManager.belowCentered(elementAbove: logoHolder, padding: 1 * CGFloat.PADDING, width: view.frame.width / 2, height: 50))
+        appHeader.textAlignment = .center
+        appHeader.text = "CarPulse"
+        appHeader.textColor = UIColor.FORD_BLUE
+//        appHeader.font = UIFont(name: "Helvetica Neue", size: 30);
+        appHeader.adjustsFontSizeToFitWidth = true
+        
+        view.addSubview(appHeader)
     }
     
     func initTextFields() {
@@ -33,6 +42,7 @@ extension StartScreen {
         usernameField.attributedPlaceholder = NSAttributedString(string: "username",
                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         usernameField.autocapitalizationType = .none
+        usernameField.layer.cornerRadius = 5
 
         view.addSubview(usernameField)
 
@@ -44,12 +54,22 @@ extension StartScreen {
         passwordField.attributedPlaceholder = NSAttributedString(string: "password",
                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         passwordField.autocapitalizationType = .none
+        passwordField.layer.cornerRadius = 5
+        passwordField.isSecureTextEntry = true
 
         view.addSubview(passwordField)
     }
     
     func initButtons() {
+        signIn = UIButton(frame: LayoutManager.belowCentered(elementAbove: passwordField, padding: .PADDING, width: view.frame.width / 2, height: 40))
         
+        signIn.setTitle("New Here? Sign-Up!", for: .normal)
+        signIn.setTitleColor(.white, for: .normal)
+        signIn.setTitleColor(.flatWhiteDark, for: .highlighted)
+        signIn.titleLabel?.font = Constants.TEXT_FONT
+        signIn.addTarget(self, action: #selector(toSignup), for: .touchUpInside)
+        
+        view.addSubview(signIn)
     }
     
 }
