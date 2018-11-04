@@ -49,6 +49,7 @@ class SDLProxyManager: NSObject {
         
         
         carScreen = CarScreen()
+        carScreen.buildScreen()
         
         let streamingConfig = SDLStreamingMediaConfiguration.autostreamingInsecureConfiguration(withInitialViewController: carScreen)
         let config = SDLConfiguration(lifecycle: lifecycleConfiguration, lockScreen: lockScreenConfig, logging: logConfig, streamingMedia: streamingConfig)

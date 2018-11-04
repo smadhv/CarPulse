@@ -9,5 +9,12 @@
 import Foundation
 import UIKit
 extension StartScreen {
-   
+    @objc func loginWithEmail() {
+        
+    }
+    
+    @objc func toSignup() {
+        SDLProxyManager.sharedManager.carScreen.text.text = "Go Sarika"
+        performSegue(withIdentifier: "start2Signup", sender: self)
+    }
 }

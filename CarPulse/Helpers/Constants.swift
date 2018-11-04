@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 class Constants {
     // Web Authentication & Endpoints
+    static let PAYPAL_CLIENT = "AUG_IXlQPZIBiv-ng2FqfXsD6wm85Ic-6oWTFdF4rMwMTwMLO8BVE8EW2orHi5K-d3lk7s4G0RYbiIqS"
+    static let PAYPAL_SECRET = "ECYaw4sHgDlxb-iSA7Zk-xYuq6tsi3k_68dToEkWPRREqyAh-8phJdGfVIKWHYG-3SL2L4VMJlwfaFEf"
+    
     
 }
 

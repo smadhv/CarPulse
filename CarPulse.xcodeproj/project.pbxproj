@@ -26,6 +26,11 @@
 		B7E7E4FF218E533F006D7D9D /* CarScreen-initUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */; };
 		B7E7E501218E54AF006D7D9D /* StartScreen-logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E500218E54AF006D7D9D /* StartScreen-logic.swift */; };
 		B7E7E503218E551B006D7D9D /* StartScreen-system.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E502218E551B006D7D9D /* StartScreen-system.swift */; };
+		B7E7E506218E96F5006D7D9D /* PayPalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E505218E96F5006D7D9D /* PayPalClient.swift */; };
+		B7E7E50B218E973D006D7D9D /* SignUpScreen-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E50A218E973D006D7D9D /* SignUpScreen-main.swift */; };
+		B7E7E50D218E974C006D7D9D /* SignUpScreen-initUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E50C218E974C006D7D9D /* SignUpScreen-initUI.swift */; };
+		B7E7E50F218E9B92006D7D9D /* SignUpScreen-system.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E50E218E9B92006D7D9D /* SignUpScreen-system.swift */; };
+		B7E7E511218E9D3C006D7D9D /* SignUpScreen-logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7E510218E9D3C006D7D9D /* SignUpScreen-logic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarScreen-initUI.swift"; sourceTree = "<group>"; };
 		B7E7E500218E54AF006D7D9D /* StartScreen-logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-logic.swift"; sourceTree = "<group>"; };
 		B7E7E502218E551B006D7D9D /* StartScreen-system.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-system.swift"; sourceTree = "<group>"; };
+		B7E7E505218E96F5006D7D9D /* PayPalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalClient.swift; sourceTree = "<group>"; };
+		B7E7E50A218E973D006D7D9D /* SignUpScreen-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen-main.swift"; sourceTree = "<group>"; };
+		B7E7E50C218E974C006D7D9D /* SignUpScreen-initUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen-initUI.swift"; sourceTree = "<group>"; };
+		B7E7E50E218E9B92006D7D9D /* SignUpScreen-system.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen-system.swift"; sourceTree = "<group>"; };
+		B7E7E510218E9D3C006D7D9D /* SignUpScreen-logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen-logic.swift"; sourceTree = "<group>"; };
 		E2899DF509F5410E384C9BAC /* Pods-CarPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.release.xcconfig"; sourceTree = "<group>"; };
 		FBA631684DBECF5A8AF1DBA2 /* Pods-CarPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPulse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarPulse/Pods-CarPulse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +98,7 @@
 			children = (
 				B7E7E4FB218E529C006D7D9D /* CarScreen */,
 				524D1133218E371C00397724 /* StartScreen */,
+				B7E7E509218E971A006D7D9D /* SignUp */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B78A4064218E12BC00F65FF2 /* ProxyManager.swift */,
+				B7E7E505218E96F5006D7D9D /* PayPalClient.swift */,
 			);
 			path = APIHelpers;
 			sourceTree = "<group>";
@@ -165,6 +177,17 @@
 				B7E7E4FE218E533F006D7D9D /* CarScreen-initUI.swift */,
 			);
 			path = CarScreen;
+			sourceTree = "<group>";
+		};
+		B7E7E509218E971A006D7D9D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B7E7E50A218E973D006D7D9D /* SignUpScreen-main.swift */,
+				B7E7E50C218E974C006D7D9D /* SignUpScreen-initUI.swift */,
+				B7E7E50E218E9B92006D7D9D /* SignUpScreen-system.swift */,
+				B7E7E510218E9D3C006D7D9D /* SignUpScreen-logic.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +330,14 @@
 				B78A4065218E12BC00F65FF2 /* ProxyManager.swift in Sources */,
 				B7E7E4FF218E533F006D7D9D /* CarScreen-initUI.swift in Sources */,
 				B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */,
+				B7E7E50D218E974C006D7D9D /* SignUpScreen-initUI.swift in Sources */,
+				B7E7E511218E9D3C006D7D9D /* SignUpScreen-logic.swift in Sources */,
+				B7E7E50F218E9B92006D7D9D /* SignUpScreen-system.swift in Sources */,
+				B7E7E506218E96F5006D7D9D /* PayPalClient.swift in Sources */,
 				524D1131218E370600397724 /* StartScreen-main.swift in Sources */,
 				B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */,
 				B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */,
+				B7E7E50B218E973D006D7D9D /* SignUpScreen-main.swift in Sources */,
 				524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */,
 				B7E7E503218E551B006D7D9D /* StartScreen-system.swift in Sources */,
 				B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */,

@@ -1,31 +1,39 @@
 //
-//  StartScreen.swift
+//  SignUpScreen.swift
 //  CarPulse
 //
-//  Created by Sarika Madhvapathy on 11/3/18.
+//  Created by Ajay Raj Merchia on 11/3/18.
 //  Copyright © 2018 Ajay Raj Merchia. All rights reserved.
 //
 
 import UIKit
+import JGProgressHUD
 
-class StartScreen: UIViewController {
+class SignUpScreen: UIViewController {
 
-    var logoHolder:UIImageView!
-    var appHeader:UILabel!
+    // UI Elements
+    var prompt: UILabel!
     
-    var emailField:UITextField!
-    var passwordField:UITextField!
+    var firstNameField: UITextField!
+    var lastNameField: UITextField!
+    var emailField: UITextField!
+    var password1Field: UITextField!
+    var password2Field: UITextField!
     
-    var signIn:UIButton!
-    var signUp:UIButton!
+    var signUpButton: UIButton!
     
+    // Alert Manager
+    var alerts: AlertManager!
+    var hud: JGProgressHUD?
+    
+    // Logic
+//    var createdUser: User?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let vc = ViewController()
-//        vc.addText()
-        
+
         // Do any additional setup after loading the view.
+        setupManagers()
         initUI()
     }
     
