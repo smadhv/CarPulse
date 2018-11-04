@@ -10,8 +10,9 @@
 		093BBFEAB0900516706BCC95 /* Pods_CarPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5B709FA05A0F1D3818C1F /* Pods_CarPulse.framework */; };
 		524D1131218E370600397724 /* StartScreen-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D1130218E370600397724 /* StartScreen-main.swift */; };
 		524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D1134218E376200397724 /* StartScreen-initUI.swift */; };
+		52D9547F218E8A3000792F80 /* CarSystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9547E218E8A3000792F80 /* CarSystemInfo.swift */; };
 		B7378CEF218E0C99007BCD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7378CEE218E0C99007BCD69 /* AppDelegate.swift */; };
-		B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7378CF0218E0C99007BCD69 /* ViewController.swift */; };
+		B7378CF1218E0C99007BCD69 /* FirstCarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7378CF0218E0C99007BCD69 /* FirstCarTest.swift */; };
 		B7378CF4218E0C99007BCD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7378CF2218E0C99007BCD69 /* Main.storyboard */; };
 		B7378CF6218E0C99007BCD69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7378CF5218E0C99007BCD69 /* Assets.xcassets */; };
 		B7378CF9218E0C99007BCD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7378CF7218E0C99007BCD69 /* LaunchScreen.storyboard */; };
@@ -32,9 +33,10 @@
 		3FB5B709FA05A0F1D3818C1F /* Pods_CarPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524D1130218E370600397724 /* StartScreen-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-main.swift"; sourceTree = "<group>"; };
 		524D1134218E376200397724 /* StartScreen-initUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartScreen-initUI.swift"; sourceTree = "<group>"; };
+		52D9547E218E8A3000792F80 /* CarSystemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSystemInfo.swift; sourceTree = "<group>"; };
 		B7378CEB218E0C99007BCD69 /* CarPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7378CEE218E0C99007BCD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7378CF0218E0C99007BCD69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7378CF0218E0C99007BCD69 /* FirstCarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCarTest.swift; sourceTree = "<group>"; };
 		B7378CF3218E0C99007BCD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7378CF5218E0C99007BCD69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7378CF8218E0C99007BCD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +129,7 @@
 				B7378CEE218E0C99007BCD69 /* AppDelegate.swift */,
 				B78A4069218E12F700F65FF2 /* Helpers */,
 				B78A4066218E12CE00F65FF2 /* APIHelpers */,
-				B7378CF0218E0C99007BCD69 /* ViewController.swift */,
+				B7378CF0218E0C99007BCD69 /* FirstCarTest.swift */,
 				524D1132218E370F00397724 /* ViewControllers */,
 				B7378CF2218E0C99007BCD69 /* Main.storyboard */,
 				B7378CF5218E0C99007BCD69 /* Assets.xcassets */,
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B78A4064218E12BC00F65FF2 /* ProxyManager.swift */,
+				52D9547E218E8A3000792F80 /* CarSystemInfo.swift */,
 			);
 			path = APIHelpers;
 			sourceTree = "<group>";
@@ -309,7 +312,8 @@
 				B78A4073218E1A4600F65FF2 /* LocalDataManager.swift in Sources */,
 				524D1131218E370600397724 /* StartScreen-main.swift in Sources */,
 				B78A4072218E1A4600F65FF2 /* LayoutManager.swift in Sources */,
-				B7378CF1218E0C99007BCD69 /* ViewController.swift in Sources */,
+				52D9547F218E8A3000792F80 /* CarSystemInfo.swift in Sources */,
+				B7378CF1218E0C99007BCD69 /* FirstCarTest.swift in Sources */,
 				524D1135218E376200397724 /* StartScreen-initUI.swift in Sources */,
 				B7E7E503218E551B006D7D9D /* StartScreen-system.swift in Sources */,
 				B78A4075218E1A4600F65FF2 /* Utils.swift in Sources */,
