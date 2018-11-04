@@ -17,6 +17,7 @@ extension CarScreen {
     
     func setScreenSize() {
         view.frame = CGRect(x: 0, y:0, width: 800, height: 640)
+        view.backgroundColor = .white
     }
     
     func initText() {

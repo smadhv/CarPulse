@@ -66,10 +66,15 @@ extension StartScreen {
         signIn.setTitle("New Here? Sign-Up!", for: .normal)
         signIn.setTitleColor(.white, for: .normal)
         signIn.setTitleColor(.flatWhiteDark, for: .highlighted)
-        signIn.titleLabel?.font = Constants.TEXT_FONT
+        signIn.setBackgroundColor(color: .FORD_BLUE, forState: .normal)
+        signIn.titleLabel?.font = .TEXT_FONT
         signIn.addTarget(self, action: #selector(toSignup), for: .touchUpInside)
         
         view.addSubview(signIn)
+    }
+    
+    @objc func toSignup() {
+        SDLProxyManager.sharedManager.carScreen.text.text = "Go Sarika"
     }
     
 }
