@@ -21,7 +21,7 @@ class SDLProxyManager: NSObject {
     
     // Manager
     var sdlManager: SDLManager!
-    var carScreen: CarScreen!!
+    var carScreen: CarScreen!
     
     // Singleton
     static let sharedManager = SDLProxyManager()
