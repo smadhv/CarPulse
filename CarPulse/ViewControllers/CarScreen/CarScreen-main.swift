@@ -11,6 +11,7 @@ import UIKit
 class CarScreen: UIViewController {
 
     var text:UILabel!
+    var butt:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,6 +13,7 @@ extension CarScreen {
     func initUI() {
         setScreenSize()
         initText()
+        initButton()
     }
     
     func setScreenSize() {
@@ -26,6 +27,19 @@ extension CarScreen {
         text.textAlignment = .center
         text.textColor = UIColor.FORD_BLUE
         view.addSubview(text)
+    }
+    
+    func initButton() {
+        butt = UIButton(frame: LayoutManager.belowCentered(elementAbove: text, padding: .PADDING, width: 100, height: 20))
+        butt.setBackgroundColor(color: .black, forState: .normal)
+        butt.addTarget(self, action: #selector(bootyCall), for: .touchUpInside)
+        
+        view.addSubview(butt)
+    }
+    
+    @objc func bootyCall() {
+        debugPrint("hello")
+        CarSystemInfo.displaySysInfo()
     }
     
 }
